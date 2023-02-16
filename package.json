@@ -21,7 +21,7 @@
       "import": "./dist/wysiwyg-markdown-react.css",
       "require": "./dist/wysiwyg-markdown-react.css"
     },
-		"./dist/theme.css": {
+    "./dist/theme.css": {
       "import": "./dist/theme.css",
       "require": "./dist/theme.css"
     }
@@ -60,5 +60,5 @@
   "peerDependencies": {
     "react": "^18.2.0"
   },
-  "version": "0.0.3"
+  "version": "0.0.4"
 }
