@@ -1,5 +1,13 @@
 # wysiwyg-markdown-react
 
+```bash
+npm i wysiwyg-markdown-react
+pnpm add wysiwyg-markdown-react
+yarn add wysiwyg-markdown-react
+```
+
+![A screenshot of the editor](./screenshot.png)
+
 This is just [remirror](https://remirror.io) packed to work out of the box as wysiwyg markdown editor to use with React.
 
 ```jsx
