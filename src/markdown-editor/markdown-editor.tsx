@@ -1,14 +1,15 @@
 import {
   EditorComponent,
   Remirror,
+  RemirrorProps,
   ThemeProvider,
   useRemirror,
-} from "@remirror/react";
-import type { FC, PropsWithChildren } from "react";
-import React, { useCallback } from "react";
-import jsx from "refractor/lang/jsx.js";
-import typescript from "refractor/lang/typescript.js";
-import { ExtensionPriority } from "remirror";
+} from '@remirror/react'
+import type { FC } from 'react'
+import React, { useCallback } from 'react'
+import jsx from 'refractor/lang/jsx.js'
+import typescript from 'refractor/lang/typescript.js'
+import { ExtensionPriority } from 'remirror'
 import {
   BlockquoteExtension,
   BoldExtension,
@@ -27,22 +28,14 @@ import {
   StrikeExtension,
   TableExtension,
   TrailingNodeExtension,
-} from "remirror/extensions";
-import { MarkdownToolbar } from "./markdown-toolbar";
+} from 'remirror/extensions'
+import { MarkdownToolbar } from './markdown-toolbar'
 
-import type { ReactEditorProps } from "@remirror/react-editors/dist-types/types";
-
-export type MarkdownEditorProps = Partial<
-  Omit<ReactEditorProps, "stringHandler">
-> & {
-  onChange: (text: string) => void;
-};
-
-export const MarkdownEditor: FC<PropsWithChildren<MarkdownEditorProps>> = ({
-  placeholder,
-  children,
-  ...rest
-}) => {
+export const MarkdownEditor: FC<
+  Omit<RemirrorProps, 'manager'> & {
+    onChange: (text: string) => void
+  }
+> = ({ placeholder, children, ...rest }) => {
   const extensions = useCallback(
     () => [
       new ImageExtension({ enableResizing: true }),
@@ -67,14 +60,14 @@ export const MarkdownEditor: FC<PropsWithChildren<MarkdownEditorProps>> = ({
       new MarkdownExtension({ copyAsMarkdown: false }),
       new HardBreakExtension(),
     ],
-    [placeholder]
-  );
+    [placeholder],
+  )
 
   const { manager } = useRemirror({
     extensions,
-    stringHandler: "markdown",
+    stringHandler: 'markdown',
     content: rest.initialContent as string,
-  });
+  })
 
   return (
     <ThemeProvider>
@@ -82,7 +75,7 @@ export const MarkdownEditor: FC<PropsWithChildren<MarkdownEditorProps>> = ({
         manager={manager}
         {...rest}
         onChange={(params) => {
-          rest.onChange(params.helpers.getMarkdown());
+          rest.onChange(params.helpers.getMarkdown())
         }}
       >
         <MarkdownToolbar />
@@ -90,5 +83,5 @@ export const MarkdownEditor: FC<PropsWithChildren<MarkdownEditorProps>> = ({
         {children}
       </Remirror>
     </ThemeProvider>
-  );
-};
+  )
+}

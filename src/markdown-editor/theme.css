@@ -76,7 +76,9 @@
 }
 
 [aria-activedescendant='*']:focus .remirror-composite[aria-selected='true'],
-[aria-activedescendant='*']:focus ~ * .remirror-composite[aria-selected='true'] {
+[aria-activedescendant='*']:focus
+  ~ *
+  .remirror-composite[aria-selected='true'] {
   color: var(--rmr-color-text);
   background-color: var(--rmr-color-background);
 }
@@ -149,7 +151,8 @@ input[type='radio'] + .remirror-form-label {
   margin-left: -1px;
 }
 
-.remirror-group > :not(:first-child):not(:last-child):not(.first-child):not(.last-child) {
+.remirror-group
+  > :not(:first-child):not(:last-child):not(.first-child):not(.last-child) {
   border-radius: 0;
 }
 
@@ -666,7 +669,9 @@ button:active .remirror-menu-pane-shortcut,
   border-left: 2px solid transparent;
 }
 
-.remirror-editor div[data-callout-type] > :not(.remirror-callout-emoji-wrapper) {
+.remirror-editor
+  div[data-callout-type]
+  > :not(.remirror-callout-emoji-wrapper) {
   margin-left: 8px;
   flex-grow: 1;
 }
@@ -990,9 +995,10 @@ button:active .remirror-menu-pane-shortcut,
 
 .remirror-base16-ateliersulphurpool-light code[class*='language-'],
 .remirror-base16-ateliersulphurpool-light pre[class*='language-'] {
-  font-family: Consolas, Menlo, Monaco, 'Andale Mono WT', 'Andale Mono', 'Lucida Console',
-    'Lucida Sans Typewriter', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Liberation Mono',
-    'Nimbus Mono L', 'Courier New', Courier, monospace;
+  font-family: Consolas, Menlo, Monaco, 'Andale Mono WT', 'Andale Mono',
+    'Lucida Console', 'Lucida Sans Typewriter', 'DejaVu Sans Mono',
+    'Bitstream Vera Sans Mono', 'Liberation Mono', 'Nimbus Mono L',
+    'Courier New', Courier, monospace;
   font-size: 14px;
   line-height: 1.375;
   direction: ltr;
@@ -1009,18 +1015,30 @@ button:active .remirror-menu-pane-shortcut,
   color: #5e6687;
 }
 
-.remirror-base16-ateliersulphurpool-light pre[class*='language-']::-moz-selection,
-.remirror-base16-ateliersulphurpool-light pre[class*='language-'] ::-moz-selection,
-.remirror-base16-ateliersulphurpool-light code[class*='language-']::-moz-selection,
-.remirror-base16-ateliersulphurpool-light code[class*='language-'] ::-moz-selection {
+.remirror-base16-ateliersulphurpool-light
+  pre[class*='language-']::-moz-selection,
+.remirror-base16-ateliersulphurpool-light
+  pre[class*='language-']
+  ::-moz-selection,
+.remirror-base16-ateliersulphurpool-light
+  code[class*='language-']::-moz-selection,
+.remirror-base16-ateliersulphurpool-light
+  code[class*='language-']
+  ::-moz-selection {
   text-shadow: none;
   background: #dfe2f1;
 }
 
-.remirror-base16-ateliersulphurpool-light pre[class*='language-']::-moz-selection,
-.remirror-base16-ateliersulphurpool-light pre[class*='language-'] ::-moz-selection,
-.remirror-base16-ateliersulphurpool-light code[class*='language-']::-moz-selection,
-.remirror-base16-ateliersulphurpool-light code[class*='language-'] ::-moz-selection {
+.remirror-base16-ateliersulphurpool-light
+  pre[class*='language-']::-moz-selection,
+.remirror-base16-ateliersulphurpool-light
+  pre[class*='language-']
+  ::-moz-selection,
+.remirror-base16-ateliersulphurpool-light
+  code[class*='language-']::-moz-selection,
+.remirror-base16-ateliersulphurpool-light
+  code[class*='language-']
+  ::-moz-selection {
   text-shadow: none;
   background: #dfe2f1;
 }
@@ -1165,7 +1183,11 @@ button:active .remirror-menu-pane-shortcut,
 
 .remirror-base16-ateliersulphurpool-light .line-highlight {
   background: rgba(107, 115, 148, 0.2);
-  background: linear-gradient(to right, rgba(107, 115, 148, 0.2) 70%, rgba(107, 115, 148, 0));
+  background: linear-gradient(
+    to right,
+    rgba(107, 115, 148, 0.2) 70%,
+    rgba(107, 115, 148, 0)
+  );
 }
 
 .remirror-cb code[class*='language-'],
@@ -1618,9 +1640,10 @@ button:active .remirror-menu-pane-shortcut,
 
 .remirror-duotone-dark code[class*='language-'],
 .remirror-duotone-dark pre[class*='language-'] {
-  font-family: Consolas, Menlo, Monaco, 'Andale Mono WT', 'Andale Mono', 'Lucida Console',
-    'Lucida Sans Typewriter', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Liberation Mono',
-    'Nimbus Mono L', 'Courier New', Courier, monospace;
+  font-family: Consolas, Menlo, Monaco, 'Andale Mono WT', 'Andale Mono',
+    'Lucida Console', 'Lucida Sans Typewriter', 'DejaVu Sans Mono',
+    'Bitstream Vera Sans Mono', 'Liberation Mono', 'Nimbus Mono L',
+    'Courier New', Courier, monospace;
   font-size: 14px;
   line-height: 1.375;
   direction: ltr;
@@ -1790,14 +1813,19 @@ button:active .remirror-menu-pane-shortcut,
 
 .remirror-duotone-dark .line-highlight {
   background: rgba(224, 145, 66, 0.2);
-  background: linear-gradient(to right, rgba(224, 145, 66, 0.2) 70%, rgba(224, 145, 66, 0));
+  background: linear-gradient(
+    to right,
+    rgba(224, 145, 66, 0.2) 70%,
+    rgba(224, 145, 66, 0)
+  );
 }
 
 .remirror-duotone-earth code[class*='language-'],
 .remirror-duotone-earth pre[class*='language-'] {
-  font-family: Consolas, Menlo, Monaco, 'Andale Mono WT', 'Andale Mono', 'Lucida Console',
-    'Lucida Sans Typewriter', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Liberation Mono',
-    'Nimbus Mono L', 'Courier New', Courier, monospace;
+  font-family: Consolas, Menlo, Monaco, 'Andale Mono WT', 'Andale Mono',
+    'Lucida Console', 'Lucida Sans Typewriter', 'DejaVu Sans Mono',
+    'Bitstream Vera Sans Mono', 'Liberation Mono', 'Nimbus Mono L',
+    'Courier New', Courier, monospace;
   font-size: 14px;
   line-height: 1.375;
   direction: ltr;
@@ -1967,14 +1995,19 @@ button:active .remirror-menu-pane-shortcut,
 
 .remirror-duotone-earth .line-highlight {
   background: rgba(191, 160, 90, 0.2);
-  background: linear-gradient(to right, rgba(191, 160, 90, 0.2) 70%, rgba(191, 160, 90, 0));
+  background: linear-gradient(
+    to right,
+    rgba(191, 160, 90, 0.2) 70%,
+    rgba(191, 160, 90, 0)
+  );
 }
 
 .remirror-duotone-forest code[class*='language-'],
 .remirror-duotone-forest pre[class*='language-'] {
-  font-family: Consolas, Menlo, Monaco, 'Andale Mono WT', 'Andale Mono', 'Lucida Console',
-    'Lucida Sans Typewriter', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Liberation Mono',
-    'Nimbus Mono L', 'Courier New', Courier, monospace;
+  font-family: Consolas, Menlo, Monaco, 'Andale Mono WT', 'Andale Mono',
+    'Lucida Console', 'Lucida Sans Typewriter', 'DejaVu Sans Mono',
+    'Bitstream Vera Sans Mono', 'Liberation Mono', 'Nimbus Mono L',
+    'Courier New', Courier, monospace;
   font-size: 14px;
   line-height: 1.375;
   direction: ltr;
@@ -2144,14 +2177,19 @@ button:active .remirror-menu-pane-shortcut,
 
 .remirror-duotone-forest .line-highlight {
   background: rgba(162, 179, 77, 0.2);
-  background: linear-gradient(to right, rgba(162, 179, 77, 0.2) 70%, rgba(162, 179, 77, 0));
+  background: linear-gradient(
+    to right,
+    rgba(162, 179, 77, 0.2) 70%,
+    rgba(162, 179, 77, 0)
+  );
 }
 
 .remirror-duotone-light code[class*='language-'],
 .remirror-duotone-light pre[class*='language-'] {
-  font-family: Consolas, Menlo, Monaco, 'Andale Mono WT', 'Andale Mono', 'Lucida Console',
-    'Lucida Sans Typewriter', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Liberation Mono',
-    'Nimbus Mono L', 'Courier New', Courier, monospace;
+  font-family: Consolas, Menlo, Monaco, 'Andale Mono WT', 'Andale Mono',
+    'Lucida Console', 'Lucida Sans Typewriter', 'DejaVu Sans Mono',
+    'Bitstream Vera Sans Mono', 'Liberation Mono', 'Nimbus Mono L',
+    'Courier New', Courier, monospace;
   font-size: 14px;
   line-height: 1.375;
   direction: ltr;
@@ -2321,14 +2359,19 @@ button:active .remirror-menu-pane-shortcut,
 
 .remirror-duotone-light .line-highlight {
   background: rgba(45, 32, 6, 0.2);
-  background: linear-gradient(to right, rgba(45, 32, 6, 0.2) 70%, rgba(45, 32, 6, 0));
+  background: linear-gradient(
+    to right,
+    rgba(45, 32, 6, 0.2) 70%,
+    rgba(45, 32, 6, 0)
+  );
 }
 
 .remirror-duotone-sea code[class*='language-'],
 .remirror-duotone-sea pre[class*='language-'] {
-  font-family: Consolas, Menlo, Monaco, 'Andale Mono WT', 'Andale Mono', 'Lucida Console',
-    'Lucida Sans Typewriter', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Liberation Mono',
-    'Nimbus Mono L', 'Courier New', Courier, monospace;
+  font-family: Consolas, Menlo, Monaco, 'Andale Mono WT', 'Andale Mono',
+    'Lucida Console', 'Lucida Sans Typewriter', 'DejaVu Sans Mono',
+    'Bitstream Vera Sans Mono', 'Liberation Mono', 'Nimbus Mono L',
+    'Courier New', Courier, monospace;
   font-size: 14px;
   line-height: 1.375;
   direction: ltr;
@@ -2498,14 +2541,19 @@ button:active .remirror-menu-pane-shortcut,
 
 .remirror-duotone-sea .line-highlight {
   background: rgba(10, 163, 112, 0.2);
-  background: linear-gradient(to right, rgba(10, 163, 112, 0.2) 70%, rgba(10, 163, 112, 0));
+  background: linear-gradient(
+    to right,
+    rgba(10, 163, 112, 0.2) 70%,
+    rgba(10, 163, 112, 0)
+  );
 }
 
 .remirror-duotone-space code[class*='language-'],
 .remirror-duotone-space pre[class*='language-'] {
-  font-family: Consolas, Menlo, Monaco, 'Andale Mono WT', 'Andale Mono', 'Lucida Console',
-    'Lucida Sans Typewriter', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Liberation Mono',
-    'Nimbus Mono L', 'Courier New', Courier, monospace;
+  font-family: Consolas, Menlo, Monaco, 'Andale Mono WT', 'Andale Mono',
+    'Lucida Console', 'Lucida Sans Typewriter', 'DejaVu Sans Mono',
+    'Bitstream Vera Sans Mono', 'Liberation Mono', 'Nimbus Mono L',
+    'Courier New', Courier, monospace;
   font-size: 14px;
   line-height: 1.375;
   direction: ltr;
@@ -2675,13 +2723,18 @@ button:active .remirror-menu-pane-shortcut,
 
 .remirror-duotone-space .line-highlight {
   background: rgba(221, 103, 44, 0.2);
-  background: linear-gradient(to right, rgba(221, 103, 44, 0.2) 70%, rgba(221, 103, 44, 0));
+  background: linear-gradient(
+    to right,
+    rgba(221, 103, 44, 0.2) 70%,
+    rgba(221, 103, 44, 0)
+  );
 }
 
 .remirror-gh-colors code[class*='language-'],
 .remirror-gh-colors pre[class*='language-'] {
   color: #393a34;
-  font-family: 'Consolas', 'Bitstream Vera Sans Mono', 'Courier New', Courier, monospace;
+  font-family: 'Consolas', 'Bitstream Vera Sans Mono', 'Courier New', Courier,
+    monospace;
   direction: ltr;
   text-align: left;
   white-space: pre;
@@ -2810,7 +2863,8 @@ button:active .remirror-menu-pane-shortcut,
 .remirror-hopscotch code[class*='language-'],
 .remirror-hopscotch pre[class*='language-'] {
   color: #ffffff;
-  font-family: 'Fira Mono', Menlo, Monaco, 'Lucida Console', 'Courier New', Courier, monospace;
+  font-family: 'Fira Mono', Menlo, Monaco, 'Lucida Console', 'Courier New',
+    Courier, monospace;
   font-size: 16px;
   line-height: 1.375;
   direction: ltr;
@@ -3057,7 +3111,8 @@ button:active .remirror-menu-pane-shortcut,
 .remirror-vs code[class*='language-'],
 .remirror-vs pre[class*='language-'] {
   color: #393a34;
-  font-family: 'Consolas', 'Bitstream Vera Sans Mono', 'Courier New', Courier, monospace;
+  font-family: 'Consolas', 'Bitstream Vera Sans Mono', 'Courier New', Courier,
+    monospace;
   direction: ltr;
   text-align: left;
   white-space: pre;
@@ -3219,7 +3274,11 @@ button:active .remirror-menu-pane-shortcut,
 
 .remirror-vs .line-highlight {
   background: rgba(193, 222, 241, 0.2);
-  background: linear-gradient(to right, rgba(193, 222, 241, 0.2) 70%, rgba(221, 222, 241, 0));
+  background: linear-gradient(
+    to right,
+    rgba(193, 222, 241, 0.2) 70%,
+    rgba(221, 222, 241, 0)
+  );
 }
 
 .remirror-xonokai code[class*='language-'],
@@ -3454,7 +3513,8 @@ button:active .remirror-menu-pane-shortcut,
   padding-bottom: 8px;
   margin: 0 auto;
   border-radius: 8px;
-  box-shadow: hsla(205, 70%, 15%, 0.25) 0 4px 8px, hsla(205, 70%, 15%, 0.31) 0px 0px 1px;
+  box-shadow: hsla(205, 70%, 15%, 0.25) 0 4px 8px,
+    hsla(205, 70%, 15%, 0.31) 0px 0px 1px;
   background-color: white;
   z-index: 10;
   max-height: 250px;
@@ -3596,7 +3656,9 @@ button:active .remirror-menu-pane-shortcut,
 .remirror-editor ul > li.remirror-list-item-with-custom-mark {
   list-style: none;
 }
-.remirror-editor .remirror-ul-list-content > li.remirror-list-item-with-custom-mark {
+.remirror-editor
+  .remirror-ul-list-content
+  > li.remirror-list-item-with-custom-mark {
   list-style: none;
 }
 /* override the browser's default styles */
@@ -3723,7 +3785,8 @@ button:active .remirror-menu-pane-shortcut,
   padding-bottom: 8px;
   margin: 0 auto;
   border-radius: 8px;
-  box-shadow: hsla(205, 70%, 15%, 0.25) 0 4px 8px, hsla(205, 70%, 15%, 0.31) 0px 0px 1px;
+  box-shadow: hsla(205, 70%, 15%, 0.25) 0 4px 8px,
+    hsla(205, 70%, 15%, 0.31) 0px 0px 1px;
   background-color: white;
   z-index: 10;
   max-height: 250px;
@@ -4004,7 +4067,9 @@ button:active .remirror-menu-pane-shortcut,
 
 /* Second and more cells are column controllers */
 
-.remirror-table-tbody-with-controllers > tr:nth-of-type(1) th:nth-of-type(n + 2) {
+.remirror-table-tbody-with-controllers
+  > tr:nth-of-type(1)
+  th:nth-of-type(n + 2) {
   overflow: visible;
   padding: 0;
   cursor: pointer;
@@ -4124,7 +4189,8 @@ button:active .remirror-menu-pane-shortcut,
 
 /* Styles for selected */
 
-.remirror-table-tbody-with-controllers th.selectedCell.remirror-table-controller {
+.remirror-table-tbody-with-controllers
+  th.selectedCell.remirror-table-controller {
   background-color: var(--rmr-color-table-selected-controller);
 }
 
@@ -4143,13 +4209,15 @@ button:active .remirror-menu-pane-shortcut,
   background-color: var(--rmr-color-table-predelete-controller) !important;
 }
 
-.remirror-table-show-predelete.remirror-table-preselect-all th.remirror-table-controller,
+.remirror-table-show-predelete.remirror-table-preselect-all
+  th.remirror-table-controller,
 .remirror-table-show-predelete.remirror-table-preselect-all td {
   border-color: var(--rmr-color-table-predelete-border) !important;
   background-color: var(--rmr-color-table-predelete-cell) !important;
 }
 
-.remirror-table-show-predelete.remirror-table-preselect-all th.remirror-table-controller {
+.remirror-table-show-predelete.remirror-table-preselect-all
+  th.remirror-table-controller {
   background-color: var(--rmr-color-table-predelete-controller) !important;
 }
 
@@ -4425,8 +4493,8 @@ button:active .remirror-menu-pane-shortcut,
   --rmr-radius-border: 0.25rem;
   --rmr-radius-extra: 0.5rem;
   --rmr-radius-circle: 50%;
-  --rmr-font-family-default: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
-    'Helvetica Neue', sans-serif;
+  --rmr-font-family-default: system-ui, -apple-system, BlinkMacSystemFont,
+    'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
   --rmr-font-family-heading: inherit;
   --rmr-font-family-mono: Menlo, monospace;
   --rmr-font-size-0: 12px;

@@ -1,1 +1,1 @@
-export { MarkdownEditor } from "./markdown-editor";
+export { MarkdownEditor } from './markdown-editor'

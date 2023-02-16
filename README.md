@@ -8,7 +8,7 @@ yarn add wysiwyg-markdown-react
 
 ![A screenshot of the editor](./screenshot.png)
 
-This is just [remirror](https://remirror.io) packed to work out of the box as wysiwyg markdown editor to use with React.
+This is just [remirror](https://remirror.io) packed to work out of the box as WYSIWYG markdown editor to use with React.
 
 ```jsx
 import { MarkdownEditor } from 'wysiwyg-markdown-react'
