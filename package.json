@@ -31,12 +31,13 @@
   "unpkg": "./dist/wysiwyg-markdown-react.umd.js",
   "types": "dist/index.d.ts",
   "scripts": {
-    "build:js": "microbundle --define process.env.NODE_ENV=production --sourcemap false --jsx React.createElement --output dist --tsconfig ./tsconfig.json --external none",
+    "build:js": "microbundle --define process.env.NODE_ENV=production --sourcemap false --jsx React.createElement --output dist --tsconfig ./tsconfig.json",
     "build:css": "tailwindcss -i src/markdown-editor/index.css -o ./dist/wysiwyg-markdown-react.css && cp src/markdown-editor/theme.css dist/theme.css",
     "build": "pnpm clean && pnpm build:css && pnpm build:js",
     "clean": "del dist",
     "format": "prettier --write src",
-    "release": "release-it"
+    "release": "release-it",
+    "prepublishOnly": "pnpm build"
   },
   "files": [
     "dist/"
