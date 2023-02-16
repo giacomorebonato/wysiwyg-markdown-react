@@ -3,7 +3,7 @@
     "incremental": true,
     "target": "ESNext",
     "module": "ESNext",
-    "sourceMap": true,
+    "sourceMap": false,
     "noEmit": true,
     "moduleResolution": "nodenext",
     "strict": true,
@@ -11,6 +11,9 @@
     "esModuleInterop": true,
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true,
-    "rootDir": "./src"
+    "rootDir": "./src",
+    "declaration": true,
+    "declarationDir": "./dist",
+    "declarationMap": true
   }
 }
