@@ -63,7 +63,7 @@
   },
   "peerDependencies": {
     "react": "*",
-    "react-router-dom": "*"
+    "react-dom": "*"
   },
   "version": "0.0.6"
 }

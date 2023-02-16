@@ -3,6 +3,7 @@ import {
   HistoryButtonGroup,
   ToggleBlockquoteButton,
   ToggleBoldButton,
+  ToggleBulletListButton,
   ToggleCodeBlockButton,
   ToggleCodeButton,
   ToggleItalicButton,
@@ -16,10 +17,10 @@ export const MarkdownToolbar: FC = () => {
     <div className='grid'>
       <div className='flex flex-row overflow-x-auto rounded-sm bg-slate-200'>
         <ToggleBoldButton className='box-border shrink-0' />
-
         <ToggleItalicButton className='box-border shrink-0' />
         <ToggleStrikeButton className='box-border shrink-0' />
 
+        <ToggleBulletListButton className='box-border shrink-0' />
         <ToggleCodeButton className='box-border shrink-0' />
         <HeadingLevelButtonGroup showAll />
         <ToggleBlockquoteButton className='box-border shrink-0' />
