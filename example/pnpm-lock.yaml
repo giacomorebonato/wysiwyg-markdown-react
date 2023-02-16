@@ -8,12 +8,12 @@ specifiers:
   react-dom: ^18.2.0
   typescript: ^4.9.3
   vite: ^4.1.0
-  wysiwyg-markdown-react: ^0.0.2
+  wysiwyg-markdown-react: ^0.0.3
 
 dependencies:
   react: 18.2.0
   react-dom: 18.2.0_react@18.2.0
-  wysiwyg-markdown-react: 0.0.2_3xleytyzprlgycb2ded54tx72i
+  wysiwyg-markdown-react: 0.0.3_3xleytyzprlgycb2ded54tx72i
 
 devDependencies:
   '@types/react': 18.0.28
@@ -4432,8 +4432,8 @@ packages:
       is-typed-array: 1.1.10
     dev: false
 
-  /wysiwyg-markdown-react/0.0.2_3xleytyzprlgycb2ded54tx72i:
-    resolution: {integrity: sha512-xiiVKbxdfTf1D/HExCcNU9vWMK8tNNyYiIcW0wLMHGBzwvZQt8hUvXlA5Vd+ox8PXRvcFrfj75JrCgE9O8h0LA==}
+  /wysiwyg-markdown-react/0.0.3_3xleytyzprlgycb2ded54tx72i:
+    resolution: {integrity: sha512-YDCIwPUfHuyD2cIeqnyZjiTD9bxr/jEi274Hvgbbvbw7iQUulCoHCUGVmB6JZLzFhFOC8yybTV+CELJIzq4fow==}
     peerDependencies:
       react: ^18.2.0
     dependencies:
