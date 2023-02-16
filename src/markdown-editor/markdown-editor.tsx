@@ -70,18 +70,20 @@ export const MarkdownEditor: FC<
   })
 
   return (
-    <ThemeProvider>
-      <Remirror
-        manager={manager}
-        {...rest}
-        onChange={(params) => {
-          rest.onChange(params.helpers.getMarkdown())
-        }}
-      >
-        <MarkdownToolbar />
-        <EditorComponent />
-        {children}
-      </Remirror>
-    </ThemeProvider>
+    <div className='prose editor-wrapper'>
+      <ThemeProvider>
+        <Remirror
+          manager={manager}
+          {...rest}
+          onChange={(params) => {
+            rest.onChange(params.helpers.getMarkdown())
+          }}
+        >
+          <MarkdownToolbar />
+          <EditorComponent />
+          {children}
+        </Remirror>
+      </ThemeProvider>
+    </div>
   )
 }
