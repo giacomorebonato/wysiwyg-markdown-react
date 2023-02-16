@@ -18,7 +18,7 @@
   "types": "dist/index.d.ts",
   "scripts": {
     "build": "microbundle --define process.env.NODE_ENV=production --sourcemap false --jsx React.createElement --output dist --tsconfig ./tsconfig.json",
-		"release": "release-it"
+    "release": "release-it"
   },
   "files": [
     "dist/"
@@ -42,5 +42,6 @@
   },
   "peerDependencies": {
     "react": "^18.2.0"
-  }
+  },
+  "version": "0.0.1"
 }
