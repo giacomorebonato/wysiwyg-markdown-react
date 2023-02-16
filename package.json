@@ -1,16 +1,16 @@
 {
   "name": "wysiwyg-markdown-react",
-	"description": "remirror ready to be used as wysiwyg markdown editor with React",
-	"keywords": [
-		"react",
-		"markdown",
-		"wysiwyg"
-	],
-	"repository": {
+  "description": "remirror ready to be used as wysiwyg markdown editor with React",
+  "keywords": [
+    "react",
+    "markdown",
+    "wysiwyg"
+  ],
+  "repository": {
     "type": "git",
     "url": "https://github.com/giacomorebonato/wysiwyg-markdown-react.git"
   },
-	"type": "module",
+  "type": "module",
   "source": "src/index.ts",
   "exports": {
     ".": {
@@ -56,5 +56,5 @@
   "peerDependencies": {
     "react": "^18.2.0"
   },
-  "version": "0.0.2"
+  "version": "0.0.3"
 }
