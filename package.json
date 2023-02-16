@@ -17,8 +17,8 @@
   "unpkg": "./dist/wysiwyg-markdown-react.umd.js",
   "types": "dist/index.d.ts",
   "scripts": {
-		"build:js": "microbundle --define process.env.NODE_ENV=production --sourcemap false --jsx React.createElement --output dist --tsconfig ./tsconfig.json",
-		"build:css": "tailwindcss -i src/markdown-editor/remirror.css -o ./dist/wysiwyg-markdown-react.css",
+    "build:js": "microbundle --define process.env.NODE_ENV=production --sourcemap false --jsx React.createElement --output dist --tsconfig ./tsconfig.json",
+    "build:css": "tailwindcss -i src/markdown-editor/remirror.css -o ./dist/wysiwyg-markdown-react.css",
     "build": "pnpm build:css && pnpm build:js",
     "release": "release-it"
   },
@@ -46,5 +46,5 @@
   "peerDependencies": {
     "react": "^18.2.0"
   },
-  "version": "0.0.1"
+  "version": "0.0.2"
 }
