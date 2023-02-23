@@ -29,7 +29,7 @@ import {
   TableExtension,
   TrailingNodeExtension,
 } from 'remirror/extensions'
-import { MarkdownToolbar } from './markdown-toolbar'
+import { MarkdownToolbar } from './markdown-toolbar.js'
 
 export const MarkdownEditor: FC<
   Omit<RemirrorProps, 'manager'> & {
@@ -70,7 +70,7 @@ export const MarkdownEditor: FC<
   })
 
   return (
-    <div className='prose editor-wrapper'>
+    <div className='prose editor-wrapper' data-theme='light'>
       <ThemeProvider>
         <Remirror
           manager={manager}

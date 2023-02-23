@@ -1,0 +1,78 @@
+{
+  "name": "wysiwyg-markdown-react",
+  "description": "remirror ready to be used as wysiwyg markdown editor with React",
+  "keywords": [
+    "react",
+    "markdown",
+    "wysiwyg"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/giacomorebonato/wysiwyg-markdown-react.git"
+  },
+  "type": "module",
+  "source": "src/index.ts",
+  "exports": {
+    ".": {
+      "require": "./dist/wysiwyg-markdown-react.cjs",
+      "default": "./dist/wysiwyg-markdown-react.modern.js"
+    },
+    "./dist/wysiwyg-markdown-react.css": {
+      "import": "./dist/wysiwyg-markdown-react.css",
+      "require": "./dist/wysiwyg-markdown-react.css"
+    },
+    "./dist/theme.css": {
+      "import": "./dist/theme.css",
+      "require": "./dist/theme.css"
+    }
+  },
+  "main": "./dist/wysiwyg-markdown-react.cjs",
+  "module": "./dist/wysiwyg-markdown-react.module.js",
+  "unpkg": "./dist/wysiwyg-markdown-react.umd.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build:js:watch": "microbundle watch --define process.env.NODE_ENV=production --sourcemap false --jsx React.createElement --output dist --tsconfig ./tsconfig.json",
+    "build:js": "microbundle --define process.env.NODE_ENV=production --sourcemap false --jsx React.createElement --output dist --tsconfig ./tsconfig.json",
+    "build:css": "tailwindcss -i src/markdown-editor/index.css -o ./dist/wysiwyg-markdown-react.css && cp src/markdown-editor/theme.css dist/theme.css",
+    "build:css:watch": "tailwindcss --watch -i src/markdown-editor/index.css -o ./dist/wysiwyg-markdown-react.css",
+    "theme:copy": "cp ./src/markdown-editor/theme.css ./dist/theme.css",
+    "build": "pnpm clean && pnpm build:css && pnpm build:js",
+    "build:watch": "pnpm clean && pnpm theme:copy && concurrently \"pnpm build:js:watch\" \"pnpm build:css:watch\"",
+    "clean": "del dist/**",
+    "format": "prettier --write src",
+    "release": "release-it",
+    "prepublishOnly": "pnpm build"
+  },
+  "files": [
+    "dist/"
+  ],
+  "devDependencies": {
+    "@tailwindcss/typography": "^0.5.9",
+    "@types/react": "^18.0.28",
+    "@types/react-dom": "^18.0.11",
+    "concurrently": "^7.6.0",
+    "del-cli": "^5.0.0",
+    "microbundle": "^0.15.1",
+    "prettier": "^2.8.4",
+    "release-it": "^15.6.0",
+    "typescript": "^4.9.5"
+  },
+  "dependencies": {
+    "@remirror/extension-markdown": "^2.0.11",
+    "@remirror/pm": "^2.0.3",
+    "@remirror/react": "^2.0.25",
+    "@remirror/react-editors": "^1.0.25",
+    "@remirror/styles": "^2.0.3",
+    "classnames": "^2.3.2",
+    "daisyui": "^2.51.0",
+    "react-icons": "^4.7.1",
+    "refractor": "^4.8.0",
+    "remirror": "^2.0.24",
+    "tailwindcss": "^3.2.7"
+  },
+  "peerDependencies": {
+    "react": "*",
+    "react-dom": "*"
+  },
+  "version": "0.0.8"
+}

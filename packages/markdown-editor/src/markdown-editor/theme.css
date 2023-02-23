@@ -2,7 +2,7 @@
  * Styles extracted from: packages/remirror__theme/src/components-theme.ts
  */
 .remirror-editor-wrapper {
-  padding-top: var(--rmr-space-3);
+  /* padding-top: var(--rmr-space-3); */
 }
 
 .remirror-button-active {

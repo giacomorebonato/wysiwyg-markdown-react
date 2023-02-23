@@ -11,7 +11,7 @@
   "dependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "wysiwyg-markdown-react": "^0.0.8"
+    "wysiwyg-markdown-react": "workspace:../markdown-editor"
   },
   "devDependencies": {
     "@types/react": "^18.0.27",
