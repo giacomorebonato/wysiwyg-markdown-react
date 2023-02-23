@@ -16,7 +16,7 @@ export const ToggleBlockQuoteButton = () => {
   const enabled = toggleBlockquote.enabled()
 
   return (
-    <BaseButton active={active} enabled={enabled}>
+    <BaseButton active={active} enabled={enabled} onClick={handleSelect}>
       <BsBlockquoteLeft />
     </BaseButton>
   )

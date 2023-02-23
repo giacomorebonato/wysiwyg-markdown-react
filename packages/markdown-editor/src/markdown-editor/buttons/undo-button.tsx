@@ -17,7 +17,7 @@ export const UndoButton = () => {
   const enabled = undoDepth() > 0
 
   return (
-    <BaseButton onClick={handleSelect} enabled={true}>
+    <BaseButton onClick={handleSelect} enabled={true} active={false}>
       <FaUndo />
     </BaseButton>
   )

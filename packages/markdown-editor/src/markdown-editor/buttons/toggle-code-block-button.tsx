@@ -21,7 +21,7 @@ export const ToggleCodeBlockButton = (props: ToggleCodeBlockButtonProps) => {
   const enabled = toggleCodeBlock.enabled(props.attrs)
 
   return (
-    <BaseButton active={active} enabled={enabled}>
+    <BaseButton active={active} enabled={enabled} onClick={handleSelect}>
       <BiCodeCurly />
     </BaseButton>
   )

@@ -17,7 +17,7 @@ export const RedoButton = () => {
   const enabled = redoDepth() > 0
 
   return (
-    <BaseButton onClick={handleSelect} enabled={true}>
+    <BaseButton onClick={handleSelect} enabled={enabled} active={false}>
       <FaRedo />
     </BaseButton>
   )

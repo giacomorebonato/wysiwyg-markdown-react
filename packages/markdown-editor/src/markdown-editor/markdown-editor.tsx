@@ -32,7 +32,7 @@ import {
 import { MarkdownToolbar } from './markdown-toolbar.js'
 
 export const MarkdownEditor: FC<
-  Omit<RemirrorProps, 'manager'> & {
+  Omit<RemirrorProps, 'manager' | 'onChange'> & {
     onChange: (text: string) => void
   }
 > = ({ placeholder, children, ...rest }) => {
@@ -75,8 +75,8 @@ export const MarkdownEditor: FC<
         <Remirror
           manager={manager}
           {...rest}
-          onChange={(params) => {
-            rest.onChange(params.helpers.getMarkdown())
+          onChange={(params: any) => {
+            rest.onChange(params.helpers.getMarkdown() as string)
           }}
         >
           <MarkdownToolbar />

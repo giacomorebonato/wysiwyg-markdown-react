@@ -71,8 +71,8 @@
     "tailwindcss": "^3.2.7"
   },
   "peerDependencies": {
-    "react": "*",
-    "react-dom": "*"
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
   },
   "version": "0.0.8"
 }
