@@ -5,7 +5,7 @@ import 'wysiwyg-markdown-react/dist/wysiwyg-markdown-react.css'
 
 import 'wysiwyg-markdown-react/dist/theme.css'
 
-import './app.css'
+import './App.css'
 
 function App() {
   const [text, setText] = useState('')
