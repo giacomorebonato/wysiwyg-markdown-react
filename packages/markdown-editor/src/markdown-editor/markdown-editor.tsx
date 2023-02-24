@@ -34,11 +34,17 @@ import { MarkdownToolbar } from './markdown-toolbar.js'
 export const MarkdownEditor: FC<
   Omit<RemirrorProps, 'manager' | 'onChange'> & {
     onChange: (text: string) => void
+    /**
+     * https://remirror.io/docs/api/extension-image#method-uploadimage
+     */
+    imageExtensionOptions?: any
   }
-> = ({ placeholder, children, ...rest }) => {
+> = ({ placeholder, children, imageExtensionOptions, ...rest }) => {
   const extensions = useCallback(
     () => [
-      new ImageExtension({ enableResizing: true }),
+      new ImageExtension({
+        ...imageExtensionOptions,
+      }),
       new PlaceholderExtension({ placeholder }),
       new LinkExtension({ autoLink: true }),
       new BoldExtension(),
@@ -70,7 +76,7 @@ export const MarkdownEditor: FC<
   })
 
   return (
-    <div className='prose editor-wrapper' data-theme='light'>
+    <div className='md-prose editor-wrapper' data-theme='light'>
       <ThemeProvider>
         <Remirror
           manager={manager}

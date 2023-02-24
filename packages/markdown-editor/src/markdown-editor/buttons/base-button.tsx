@@ -18,9 +18,9 @@ export const BaseButton = ({
     <button
       type='button'
       onClick={onClick}
-      className={cn(`btn box-border shrink-0 btn-ghost`, {
-        'btn-disabled': false,
-        'backdrop-brightness-50': active,
+      className={cn(`md-btn md-box-border md-shrink-0 md-btn-ghost`, {
+        'md-btn-disabled': false,
+        'md-backdrop-brightness-50': active,
         enabled,
       })}
     >
