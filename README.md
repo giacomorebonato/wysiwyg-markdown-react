@@ -30,4 +30,4 @@ const MyComponent = () => {
 
 ```
 
-My advice is to copy the [CSS theme file from here](./src/markdown-editor/theme.css) and add it to your project.
+Note that you need to import both the `wysiwyg-markdown-react.css` and `theme.css` files to apply the default styles to the editor. You can also copy the `theme.css` file [from here](/packages/markdown-editor/src/markdown-editor/theme.css) and customize it to fit your needs.
