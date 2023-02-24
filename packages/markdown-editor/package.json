@@ -4,7 +4,11 @@
   "keywords": [
     "react",
     "markdown",
-    "wysiwyg"
+    "wysiwyg",
+    "rich",
+    "remirror",
+    "markdown-editor",
+    "typescript"
   ],
   "repository": {
     "type": "git",
