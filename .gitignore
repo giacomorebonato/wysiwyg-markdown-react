@@ -130,3 +130,4 @@ dist
 .pnp.*
 example/pnpm-lock.yaml
 dist/
+packages/markdown-editor/README.md

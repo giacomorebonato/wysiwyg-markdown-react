@@ -40,7 +40,7 @@
     "build:watch": "pnpm clean && pnpm theme:copy && concurrently \"pnpm build:js:watch\" \"pnpm build:css:watch\"",
     "clean": "del dist/**",
     "format": "prettier --write src",
-    "release": "release-it",
+    "release": "cp ../../README.md . && release-it",
     "prepublishOnly": "pnpm build"
   },
   "files": [
