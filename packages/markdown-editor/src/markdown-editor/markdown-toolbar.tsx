@@ -13,7 +13,7 @@ import { UndoButton } from './buttons/undo-button.js'
 
 export const MarkdownToolbar: FC = () => {
   return (
-    <div className='grid'>
+    <div className='grid sticky top-0 z-10'>
       <div className='flex flex-row overflow-x-auto rounded-sm bg-slate-200'>
         <ToggleBoldButton />
         <ToggleItalicButton />
